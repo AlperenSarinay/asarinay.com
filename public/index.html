@@ -4,25 +4,87 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Document</title>
+    <title>Feedback Demo</title>
+    <style>
+      body {
+        margin: 0;
+        padding: 0;
+        height: 100vh;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        font-family: Arial, sans-serif;
+        background-color: #f4f4f9;
+      }
+      .container {
+        background-color: #fff;
+        padding: 20px;
+        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        border-radius: 10px;
+        max-width: 650px;
+        text-align: center;
+      }
+      h2 {
+        color: #333;
+      }
+      p {
+        color: #666;
+      }
+      pre {
+        background-color: #f0f0f0;
+        padding: 10px;
+        border-radius: 5px;
+        overflow-x: auto;
+      }
+      a {
+        color: #007bff;
+        text-decoration: none;
+      }
+      a:hover {
+        text-decoration: underline;
+      }
+      .feedback-note {
+        position: absolute;
+        bottom: 10px;
+        left: 10px;
+        font-size: 14px;
+        color: #555;
+      }
+    </style>
   </head>
   <body>
-    <h2 id="basic-usage">Basic usage</h2>
-    <p>Please add the related bundle to your website.</p>
-    <pre><code class="lang-js"><span class="hljs-tag">&lt;<span class="hljs-name">script</span> <span class="hljs-attr">src</span>=<span class="hljs-string">'https://www.asarinay.com/js/feedback-bundle.js'</span> <span class="hljs-attr">defer</span>&gt;</span><span class="undefined"></span><span class="hljs-tag">&lt;/<span class="hljs-name">script</span>&gt;</span>
-</code></pre>
-    <blockquote>
+    <div class="container">
+      <h2 id="basic-usage">Basic usage</h2>
+      <p>Please add the related bundle to your website.</p>
+      <pre><code class="lang-js">&lt;script src='https://www.asarinay.com/js/feedback-bundle.js' defer&gt;&lt;/script&gt;</code></pre>
+      <blockquote>
+        <p>
+          You can use
+          <a
+            href="https://docs.google.com/spreadsheets/d/1Wj6ftz6fLZdOIHnGPWRzAg2OM7ymoJXrfakuB2he31o/edit?usp=sharing"
+            >google sheets</a
+          >
+          to check submissions.
+        </p>
+      </blockquote>
+      <h2 id="live-demo">Live Demo</h2>
       <p>
-        You can use
-        <a
-          href="https://docs.google.com/spreadsheets/d/1Wj6ftz6fLZdOIHnGPWRzAg2OM7ymoJXrfakuB2he31o/edit?usp=sharing"
-          >google sheets</a
-        >
-        to check submissions.
+        <a href="https://www.asarinay.com/">Click here to check live demo</a>
       </p>
-    </blockquote>
-    <h2 id="live-demo">Live Demo</h2>
-    <p><a href="https://www.asarinay.com/">Click here to check live demo</a></p>
+      <p
+        style="
+          font-size: 14px;
+          font-style: italic;
+          padding: 10px;
+          background-color: #f0f0f0;
+          border-left: 4px solid #f27a1a;
+        "
+      >
+        You can try the feedback live demo by clicking the 'feedback' button in
+        the bottom right corner.
+      </p>
+    </div>
+    <div class="feedback-note"></div>
     <script src="./js/feedback-bundle.js"></script>
   </body>
 </html>
